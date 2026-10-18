@@ -18,7 +18,6 @@ The SEC asks API clients to identify themselves. Copy `.env.example` to `.env` a
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-$env:SEC_USER_AGENT = "FormScope/1.0 Your Name you@example.com"
 $env:PYTHONPATH = "src"
 uvicorn formscope.api:app --reload
 ```
@@ -29,8 +28,10 @@ Build and run the container with a real SEC contact identity:
 
 ```powershell
 docker build -t formscope .
-docker run --rm -p 8000:8000 -e SEC_USER_AGENT="FormScope/1.0 Your Name you@example.com" formscope
+docker run --rm -p 8000:8000 -e SEC_USER_AGENT="FormScope/1.0 Your Name real-email@example.com" formscope
 ```
+
+Replace the Docker command's example identity with your own identifying name and contact email. Do not leave the placeholders unchanged.
 
 ## Endpoints
 
