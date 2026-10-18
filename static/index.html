@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <title>FormScope · SEC filings and financial context</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="masthead"><a class="wordmark" href="#top"><span class="mark">F</span> FORMSCOPE</a><span class="source-tag"><i></i> LIVE SEC EDGAR DATA</span></header>
+    <section class="hero" id="top"><div class="hero-label">PUBLIC FILINGS · TRACEABLE FACTS</div><h1>Understand a company.<br><em>Follow the evidence.</em></h1><p>Explore reported financials and search the latest 10-K. Every number links to its SEC source. No forecast, recommendation, or black-box score.</p><form id="company-form" class="search"><label for="ticker">Ticker symbol</label><input id="ticker" value="AAPL" maxlength="10" aria-label="Ticker symbol"><button class="button" type="submit">Analyze company <span>↗</span></button></form><div class="hero-meta"><span>TRY AAPL, MSFT, NVDA, OR GOOGL</span><span>EDGAR · XBRL</span></div></section>
+    <section id="report" class="report hidden"><div class="report-head"><div><div id="company-name" class="company-name"></div><div id="report-meta" class="report-meta"></div></div><a id="facts-link" class="text-link" target="_blank" rel="noreferrer">Open company facts ↗</a></div><div id="financial-grid" class="financial-grid"></div><div class="section-title"><span>ANNUAL FINANCIAL SNAPSHOT</span><span>10-K XBRL FACTS · USD</span></div><div class="table-wrap"><table><thead><tr><th>Fiscal year</th><th>Revenue</th><th>Revenue change</th><th>Net income</th><th>Net margin</th></tr></thead><tbody id="financial-rows"></tbody></table></div><div class="section-title filing-title"><span>SEARCH THE LATEST 10-K</span><span id="latest-filing-date"></span></div><form id="filing-form" class="filing-search"><input id="filing-question" placeholder="e.g. What risks does the company discuss about its supply chain?" maxlength="500"><button class="button" type="submit">Find passages <span>↗</span></button></form><div id="filing-answer" class="filing-answer"></div><div id="citations" class="citations"></div><div id="filings" class="filings"></div><p class="disclaimer">Financial data and filing text come from SEC EDGAR. This research interface summarizes filed historical facts; it does not provide investment advice or predict future performance.</p></section>
+    <section id="empty" class="empty-panel"><span class="eyebrow">YOUR WORKSPACE</span><h2>Start with a ticker.</h2><p>The dashboard computes simple historical metrics from filed XBRL facts and keeps every source one click away.</p></section>
+    <footer><span>FormScope · Independent research tool</span><span><a href="https://www.sec.gov/edgar/sec-api-documentation" target="_blank" rel="noreferrer">SEC API documentation ↗</a></span></footer>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
