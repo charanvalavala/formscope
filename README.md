@@ -1,5 +1,7 @@
 # FormScope
 
+**Live demo:** [Open FormScope](https://charan-formscope.onrender.com). Hosted on Render free tier; the service sleeps when idle, so the first visit may take about 50 seconds to wake.
+
 FormScope is an evidence-linked SEC filings explorer. It resolves a ticker through SEC company submissions, reads XBRL company facts, computes annual revenue growth and net margins, links every filing, and ranks passages from the latest 10-K against a user's question.
 
 ## Capabilities
