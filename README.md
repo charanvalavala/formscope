@@ -60,6 +60,8 @@ The application uses public SEC EDGAR endpoints: the [SEC API documentation](htt
 
 The checked-in ground-truth fixture records the revenue and net income values read from each issuer's latest 10-K inline XBRL, including its accession and filing URL. FormScope's SEC Company Facts output matched both values for all 20 issuers in the snapshot: 20/20 revenue values and 20/20 net income values (40/40 fact checks). This validates extraction and fiscal-period matching for these filings; it does not establish that every issuer uses comparable accounting concepts.
 
+There were no mismatches in this 20-issuer snapshot. The sample is a fixed set of large public companies; it does not cover issuers that use unlisted concepts, non-USD presentations, or unusual reporting contexts. The offline test checks the recorded comparison against the pinned filing facts and separately exercises FormScope's annual-fact selection logic; rerun the SEC comparison to refresh current Company Facts values.
+
 Reproduce the live comparison with your identifying SEC User-Agent:
 
 ```powershell

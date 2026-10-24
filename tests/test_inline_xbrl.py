@@ -43,10 +43,18 @@ def test_formscope_matches_checked_in_values_from_twenty_filed_10ks():
     root = Path(__file__).resolve().parents[1]
     fixture = json.loads((root / "data" / "financial-ground-truth-20.json").read_text(encoding="utf-8"))
     report = json.loads((root / "reports" / "financial-ground-truth-results.json").read_text(encoding="utf-8"))
+    report_rows = {item["ticker"]: item for item in report["details"]}
 
     assert len(fixture) == 20
+    assert len(report_rows) == len(fixture)
+    assert report["companies"] == len(fixture)
     assert report["total_matches"] == report["total_fact_checks"] == 40
     for item in fixture:
+        report_row = report_rows[item["ticker"]]
+        assert report_row["revenue_expected"] == report_row["revenue_actual"] == item["revenue"]
+        assert report_row["net_income_expected"] == report_row["net_income_actual"] == item["net_income"]
+        assert report_row["revenue_match"] is True
+        assert report_row["net_income_match"] is True
         end = date.fromisoformat(item["report_date"])
         start = (end - timedelta(days=365)).isoformat()
         observation = {"start": start, "end": item["report_date"], "filed": item["report_date"], "form": "10-K", "fp": "FY"}
