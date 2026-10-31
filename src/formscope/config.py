@@ -15,5 +15,11 @@ MAX_QUERY_CHARS = 500
 
 
 def validate_settings():
-    if not SEC_USER_AGENT or "your name" in SEC_USER_AGENT.casefold() or "example.com" in SEC_USER_AGENT.casefold():
-        raise RuntimeError("Set SEC_USER_AGENT in .env or the process environment to an identifying name and contact email.")
+    if (
+        not SEC_USER_AGENT
+        or "your name" in SEC_USER_AGENT.casefold()
+        or "example.com" in SEC_USER_AGENT.casefold()
+    ):
+        raise RuntimeError(
+            "Set SEC_USER_AGENT in .env or the process environment to an identifying name and contact email."
+        )

@@ -1,0 +1,1394 @@
+{
+  "scope": "Thirty manually authored questions over twenty cropped SEC filing excerpts from ten issuers, selected from competition-related lexical results. This selection biases the benchmark and does not measure full-filing retrieval, unseen issuers or financial reasoning. No settings were tuned on these questions.",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "passages": 20,
+  "queries": 30,
+  "issuers": 10,
+  "methods": {
+    "lexical": {
+      "hit1": 0.9,
+      "mrr": 0.9388888888888889,
+      "p50_ms": 0.93,
+      "p95_ms": 1.51,
+      "details": [
+        {
+          "id": "AAPL-q0",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 2.49
+        },
+        {
+          "id": "AAPL-q1",
+          "expected": [
+            "AAPL-1"
+          ],
+          "retrieved": [
+            "AAPL-1",
+            "AAPL-0",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.11
+        },
+        {
+          "id": "AAPL-q2",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "GOOGL-1",
+            "AAPL-1",
+            "MSFT-0",
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.11
+        },
+        {
+          "id": "MSFT-q0",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "NVDA-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.93
+        },
+        {
+          "id": "MSFT-q1",
+          "expected": [
+            "MSFT-1"
+          ],
+          "retrieved": [
+            "MSFT-1",
+            "AMZN-1",
+            "META-0",
+            "META-1",
+            "INTC-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.91
+        },
+        {
+          "id": "MSFT-q2",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "MSFT-1",
+            "GOOGL-0",
+            "NVDA-0",
+            "ORCL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.73
+        },
+        {
+          "id": "GOOGL-q0",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.74
+        },
+        {
+          "id": "GOOGL-q1",
+          "expected": [
+            "GOOGL-1"
+          ],
+          "retrieved": [
+            "GOOGL-1",
+            "META-0",
+            "CSCO-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.79
+        },
+        {
+          "id": "GOOGL-q2",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0",
+            "MSFT-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.72
+        },
+        {
+          "id": "AMZN-q0",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AMZN-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.7
+        },
+        {
+          "id": "AMZN-q1",
+          "expected": [
+            "AMZN-1"
+          ],
+          "retrieved": [
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.71
+        },
+        {
+          "id": "AMZN-q2",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "AAPL-1",
+            "AMZN-0"
+          ],
+          "hit1": false,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.68
+        },
+        {
+          "id": "NVDA-q0",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "ORCL-1",
+            "MSFT-0",
+            "MSFT-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.77
+        },
+        {
+          "id": "NVDA-q1",
+          "expected": [
+            "NVDA-1"
+          ],
+          "retrieved": [
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.33
+        },
+        {
+          "id": "NVDA-q2",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "ORCL-1",
+            "TSLA-1",
+            "INTC-1",
+            "AAPL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.51
+        },
+        {
+          "id": "META-q0",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "META-1",
+            "AMZN-1",
+            "MSFT-1",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.09
+        },
+        {
+          "id": "META-q1",
+          "expected": [
+            "META-1"
+          ],
+          "retrieved": [
+            "META-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.83
+        },
+        {
+          "id": "META-q2",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "AMZN-1",
+            "META-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.77
+        },
+        {
+          "id": "ORCL-q0",
+          "expected": [
+            "ORCL-0"
+          ],
+          "retrieved": [
+            "ORCL-0",
+            "MSFT-1",
+            "NVDA-0",
+            "ORCL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.71
+        },
+        {
+          "id": "ORCL-q1",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "MSFT-1",
+            "ORCL-1",
+            "AAPL-0",
+            "GOOGL-1",
+            "NVDA-1"
+          ],
+          "hit1": false,
+          "mrr": 0.5,
+          "latency_ms": 0.75
+        },
+        {
+          "id": "ORCL-q2",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "ORCL-1",
+            "MSFT-0",
+            "MSFT-1",
+            "NVDA-0",
+            "ORCL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.83
+        },
+        {
+          "id": "TSLA-q0",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.17
+        },
+        {
+          "id": "TSLA-q1",
+          "expected": [
+            "TSLA-1"
+          ],
+          "retrieved": [
+            "TSLA-1",
+            "MSFT-0",
+            "GOOGL-0",
+            "NVDA-0",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.53
+        },
+        {
+          "id": "TSLA-q2",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.19
+        },
+        {
+          "id": "CSCO-q0",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "AAPL-1",
+            "INTC-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.21
+        },
+        {
+          "id": "CSCO-q1",
+          "expected": [
+            "CSCO-1"
+          ],
+          "retrieved": [
+            "CSCO-1",
+            "AAPL-1",
+            "NVDA-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.15
+        },
+        {
+          "id": "CSCO-q2",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "NVDA-0",
+            "NVDA-1",
+            "META-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.24
+        },
+        {
+          "id": "INTC-q0",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0",
+            "INTC-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1.0
+        },
+        {
+          "id": "INTC-q1",
+          "expected": [
+            "INTC-1"
+          ],
+          "retrieved": [
+            "META-0",
+            "TSLA-1",
+            "INTC-1"
+          ],
+          "hit1": false,
+          "mrr": 0.3333333333333333,
+          "latency_ms": 0.99
+        },
+        {
+          "id": "INTC-q2",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 0.72
+        }
+      ]
+    },
+    "semantic": {
+      "hit1": 0.9333333333333333,
+      "mrr": 0.9666666666666667,
+      "p50_ms": 6.57,
+      "p95_ms": 10.13,
+      "details": [
+        {
+          "id": "AAPL-q0",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "AMZN-1",
+            "CSCO-1",
+            "NVDA-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 1890.92
+        },
+        {
+          "id": "AAPL-q1",
+          "expected": [
+            "AAPL-1"
+          ],
+          "retrieved": [
+            "AAPL-1",
+            "MSFT-1",
+            "NVDA-1",
+            "AMZN-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.0
+        },
+        {
+          "id": "AAPL-q2",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "CSCO-1",
+            "AAPL-0",
+            "AMZN-1",
+            "GOOGL-1",
+            "NVDA-1"
+          ],
+          "hit1": false,
+          "mrr": 0.5,
+          "latency_ms": 7.55
+        },
+        {
+          "id": "MSFT-q0",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "AMZN-0",
+            "META-0",
+            "GOOGL-0",
+            "ORCL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.48
+        },
+        {
+          "id": "MSFT-q1",
+          "expected": [
+            "MSFT-1"
+          ],
+          "retrieved": [
+            "MSFT-1",
+            "GOOGL-0",
+            "META-0",
+            "AMZN-1",
+            "AMZN-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.57
+        },
+        {
+          "id": "MSFT-q2",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "NVDA-0",
+            "AMZN-0",
+            "META-1",
+            "CSCO-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.82
+        },
+        {
+          "id": "GOOGL-q0",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.28
+        },
+        {
+          "id": "GOOGL-q1",
+          "expected": [
+            "GOOGL-1"
+          ],
+          "retrieved": [
+            "META-0",
+            "GOOGL-1",
+            "NVDA-1",
+            "AMZN-1"
+          ],
+          "hit1": false,
+          "mrr": 0.5,
+          "latency_ms": 7.32
+        },
+        {
+          "id": "GOOGL-q2",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0",
+            "GOOGL-1",
+            "AMZN-1",
+            "CSCO-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.53
+        },
+        {
+          "id": "AMZN-q0",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AMZN-0",
+            "NVDA-0",
+            "MSFT-0",
+            "CSCO-1",
+            "MSFT-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.91
+        },
+        {
+          "id": "AMZN-q1",
+          "expected": [
+            "AMZN-1"
+          ],
+          "retrieved": [
+            "AMZN-1",
+            "CSCO-1",
+            "NVDA-1",
+            "GOOGL-1",
+            "AAPL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.15
+        },
+        {
+          "id": "AMZN-q2",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AMZN-0",
+            "META-1",
+            "META-0",
+            "AAPL-0",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.01
+        },
+        {
+          "id": "NVDA-q0",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "META-1",
+            "MSFT-0",
+            "INTC-0",
+            "ORCL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.65
+        },
+        {
+          "id": "NVDA-q1",
+          "expected": [
+            "NVDA-1"
+          ],
+          "retrieved": [
+            "NVDA-1",
+            "AMZN-1",
+            "META-0",
+            "GOOGL-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.98
+        },
+        {
+          "id": "NVDA-q2",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "ORCL-1",
+            "MSFT-0",
+            "ORCL-0",
+            "AMZN-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.93
+        },
+        {
+          "id": "META-q0",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "AMZN-1",
+            "GOOGL-1",
+            "META-1",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.83
+        },
+        {
+          "id": "META-q1",
+          "expected": [
+            "META-1"
+          ],
+          "retrieved": [
+            "META-1",
+            "CSCO-1",
+            "NVDA-1",
+            "GOOGL-1",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.8
+        },
+        {
+          "id": "META-q2",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "GOOGL-1",
+            "AMZN-1",
+            "META-1",
+            "CSCO-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.89
+        },
+        {
+          "id": "ORCL-q0",
+          "expected": [
+            "ORCL-0"
+          ],
+          "retrieved": [
+            "ORCL-0",
+            "NVDA-0",
+            "NVDA-1",
+            "CSCO-1",
+            "ORCL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.8
+        },
+        {
+          "id": "ORCL-q1",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "ORCL-1",
+            "ORCL-0",
+            "AAPL-1",
+            "TSLA-1",
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.43
+        },
+        {
+          "id": "ORCL-q2",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "ORCL-1",
+            "ORCL-0",
+            "NVDA-0",
+            "AAPL-0",
+            "MSFT-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.07
+        },
+        {
+          "id": "TSLA-q0",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.01
+        },
+        {
+          "id": "TSLA-q1",
+          "expected": [
+            "TSLA-1"
+          ],
+          "retrieved": [
+            "TSLA-1",
+            "NVDA-1",
+            "GOOGL-0",
+            "ORCL-0",
+            "CSCO-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 10.13
+        },
+        {
+          "id": "TSLA-q2",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 12.27
+        },
+        {
+          "id": "CSCO-q0",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "GOOGL-1",
+            "META-0",
+            "INTC-1",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 4.97
+        },
+        {
+          "id": "CSCO-q1",
+          "expected": [
+            "CSCO-1"
+          ],
+          "retrieved": [
+            "CSCO-1",
+            "AMZN-1",
+            "GOOGL-0",
+            "NVDA-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 3.37
+        },
+        {
+          "id": "CSCO-q2",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "ORCL-0",
+            "META-1",
+            "GOOGL-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.59
+        },
+        {
+          "id": "INTC-q0",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0",
+            "ORCL-1",
+            "INTC-1",
+            "NVDA-1",
+            "CSCO-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.52
+        },
+        {
+          "id": "INTC-q1",
+          "expected": [
+            "INTC-1"
+          ],
+          "retrieved": [
+            "INTC-1",
+            "NVDA-1",
+            "META-1",
+            "ORCL-0",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 5.82
+        },
+        {
+          "id": "INTC-q2",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0",
+            "ORCL-1",
+            "NVDA-1",
+            "TSLA-1",
+            "AMZN-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.22
+        }
+      ]
+    },
+    "hybrid": {
+      "hit1": 1.0,
+      "mrr": 1.0,
+      "p50_ms": 7.92,
+      "p95_ms": 10.18,
+      "details": [
+        {
+          "id": "AAPL-q0",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "TSLA-1",
+            "AMZN-1",
+            "CSCO-1",
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 8.17
+        },
+        {
+          "id": "AAPL-q1",
+          "expected": [
+            "AAPL-1"
+          ],
+          "retrieved": [
+            "AAPL-1",
+            "AMZN-1",
+            "AAPL-0",
+            "MSFT-1",
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.35
+        },
+        {
+          "id": "AAPL-q2",
+          "expected": [
+            "AAPL-0"
+          ],
+          "retrieved": [
+            "AAPL-0",
+            "GOOGL-1",
+            "CSCO-1",
+            "NVDA-1",
+            "AAPL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.88
+        },
+        {
+          "id": "MSFT-q0",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "NVDA-0",
+            "AMZN-0",
+            "META-0",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 10.18
+        },
+        {
+          "id": "MSFT-q1",
+          "expected": [
+            "MSFT-1"
+          ],
+          "retrieved": [
+            "MSFT-1",
+            "AMZN-1",
+            "META-0",
+            "META-1",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.92
+        },
+        {
+          "id": "MSFT-q2",
+          "expected": [
+            "MSFT-0"
+          ],
+          "retrieved": [
+            "MSFT-0",
+            "NVDA-0",
+            "MSFT-1",
+            "ORCL-1",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 8.92
+        },
+        {
+          "id": "GOOGL-q0",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 8.85
+        },
+        {
+          "id": "GOOGL-q1",
+          "expected": [
+            "GOOGL-1"
+          ],
+          "retrieved": [
+            "GOOGL-1",
+            "META-0",
+            "NVDA-1",
+            "CSCO-0",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.57
+        },
+        {
+          "id": "GOOGL-q2",
+          "expected": [
+            "GOOGL-0"
+          ],
+          "retrieved": [
+            "GOOGL-0",
+            "MSFT-1",
+            "GOOGL-1",
+            "AMZN-1",
+            "CSCO-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.36
+        },
+        {
+          "id": "AMZN-q0",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AMZN-0",
+            "NVDA-0",
+            "MSFT-0",
+            "CSCO-1",
+            "MSFT-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.84
+        },
+        {
+          "id": "AMZN-q1",
+          "expected": [
+            "AMZN-1"
+          ],
+          "retrieved": [
+            "AMZN-1",
+            "CSCO-1",
+            "NVDA-1",
+            "GOOGL-1",
+            "AAPL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 4.98
+        },
+        {
+          "id": "AMZN-q2",
+          "expected": [
+            "AMZN-0"
+          ],
+          "retrieved": [
+            "AMZN-0",
+            "AAPL-0",
+            "AAPL-1",
+            "META-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.18
+        },
+        {
+          "id": "NVDA-q0",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "MSFT-0",
+            "ORCL-1",
+            "MSFT-1",
+            "META-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 23.98
+        },
+        {
+          "id": "NVDA-q1",
+          "expected": [
+            "NVDA-1"
+          ],
+          "retrieved": [
+            "NVDA-1",
+            "AMZN-1",
+            "META-0",
+            "GOOGL-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 25.69
+        },
+        {
+          "id": "NVDA-q2",
+          "expected": [
+            "NVDA-0"
+          ],
+          "retrieved": [
+            "NVDA-0",
+            "ORCL-1",
+            "MSFT-0",
+            "AAPL-1",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.03
+        },
+        {
+          "id": "META-q0",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "AMZN-1",
+            "META-1",
+            "GOOGL-1",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 10.12
+        },
+        {
+          "id": "META-q1",
+          "expected": [
+            "META-1"
+          ],
+          "retrieved": [
+            "META-1",
+            "CSCO-1",
+            "NVDA-1",
+            "GOOGL-1",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.5
+        },
+        {
+          "id": "META-q2",
+          "expected": [
+            "META-0"
+          ],
+          "retrieved": [
+            "META-0",
+            "AMZN-1",
+            "META-1",
+            "GOOGL-1",
+            "CSCO-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.01
+        },
+        {
+          "id": "ORCL-q0",
+          "expected": [
+            "ORCL-0"
+          ],
+          "retrieved": [
+            "ORCL-0",
+            "NVDA-0",
+            "ORCL-1",
+            "MSFT-1",
+            "NVDA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.63
+        },
+        {
+          "id": "ORCL-q1",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "ORCL-1",
+            "ORCL-0",
+            "AAPL-0",
+            "NVDA-1",
+            "GOOGL-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.98
+        },
+        {
+          "id": "ORCL-q2",
+          "expected": [
+            "ORCL-1"
+          ],
+          "retrieved": [
+            "ORCL-1",
+            "MSFT-0",
+            "ORCL-0",
+            "NVDA-0",
+            "MSFT-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 8.58
+        },
+        {
+          "id": "TSLA-q0",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0",
+            "GOOGL-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 9.88
+        },
+        {
+          "id": "TSLA-q1",
+          "expected": [
+            "TSLA-1"
+          ],
+          "retrieved": [
+            "TSLA-1",
+            "GOOGL-0",
+            "META-0",
+            "NVDA-0",
+            "MSFT-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.84
+        },
+        {
+          "id": "TSLA-q2",
+          "expected": [
+            "TSLA-0"
+          ],
+          "retrieved": [
+            "TSLA-0",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.7
+        },
+        {
+          "id": "CSCO-q0",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "INTC-1",
+            "AAPL-1",
+            "GOOGL-1",
+            "META-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.59
+        },
+        {
+          "id": "CSCO-q1",
+          "expected": [
+            "CSCO-1"
+          ],
+          "retrieved": [
+            "CSCO-1",
+            "NVDA-1",
+            "TSLA-1",
+            "AAPL-1",
+            "AMZN-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 8.29
+        },
+        {
+          "id": "CSCO-q2",
+          "expected": [
+            "CSCO-0"
+          ],
+          "retrieved": [
+            "CSCO-0",
+            "META-1",
+            "NVDA-1",
+            "ORCL-0",
+            "TSLA-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.48
+        },
+        {
+          "id": "INTC-q0",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0",
+            "INTC-1",
+            "ORCL-1",
+            "NVDA-1",
+            "CSCO-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.63
+        },
+        {
+          "id": "INTC-q1",
+          "expected": [
+            "INTC-1"
+          ],
+          "retrieved": [
+            "INTC-1",
+            "TSLA-1",
+            "META-0",
+            "NVDA-1",
+            "META-1"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 7.83
+        },
+        {
+          "id": "INTC-q2",
+          "expected": [
+            "INTC-0"
+          ],
+          "retrieved": [
+            "INTC-0",
+            "ORCL-1",
+            "NVDA-1",
+            "TSLA-1",
+            "AMZN-0"
+          ],
+          "hit1": true,
+          "mrr": 1.0,
+          "latency_ms": 6.72
+        }
+      ]
+    }
+  }
+}

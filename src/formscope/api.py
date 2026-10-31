@@ -22,7 +22,12 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="FormScope", version="1.0.0", description="Source-linked SEC filings analysis and financial fact exploration.", lifespan=lifespan)
+app = FastAPI(
+    title="FormScope",
+    version="1.0.0",
+    description="Source-linked SEC filings analysis and financial fact exploration.",
+    lifespan=lifespan,
+)
 
 
 @app.get("/")
@@ -44,19 +49,30 @@ def get_company(request: Request, ticker: str = Query(min_length=1, max_length=1
         raise HTTPException(status_code=404, detail=str(error)) from error
     except Exception as error:
         logger.exception("SEC company request failed")
-        raise HTTPException(status_code=502, detail="The SEC data request failed. Try again shortly.") from error
+        raise HTTPException(
+            status_code=502, detail="The SEC data request failed. Try again shortly."
+        ) from error
 
 
 @app.get("/api/filing-search")
-def filing_search(request: Request, ticker: str = Query(min_length=1, max_length=10), question: str = Query(min_length=3, max_length=MAX_QUERY_CHARS)):
+def filing_search(
+    request: Request,
+    ticker: str = Query(min_length=1, max_length=10),
+    question: str = Query(min_length=3, max_length=MAX_QUERY_CHARS),
+    method: str = Query(default="hybrid", pattern="^(hybrid|lexical)$"),
+):
     enforce_limit(request, "filing-search", 12)
     try:
-        return answer_from_filings(ticker, question)
+        return answer_from_filings(ticker, question, method)
     except ValueError as error:
         raise HTTPException(status_code=404, detail=str(error)) from error
     except Exception as error:
         logger.exception("SEC filing request failed")
-        raise HTTPException(status_code=502, detail="The SEC filing request failed. Try again shortly.") from error
+        raise HTTPException(
+            status_code=502, detail="The SEC filing request failed. Try again shortly."
+        ) from error
 
 
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+
+app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="frontend")

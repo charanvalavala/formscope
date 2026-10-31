@@ -1,8 +1,17 @@
 from formscope.financials import annual_observations, summarize_facts
 
 
-def observation(value, filed, start="2023-10-01", end="2024-09-30", form="10-K", fp="FY"):
-    return {"val": value, "start": start, "end": end, "filed": filed, "form": form, "fp": fp}
+def observation(
+    value, filed, start="2023-10-01", end="2024-09-30", form="10-K", fp="FY"
+):
+    return {
+        "val": value,
+        "start": start,
+        "end": end,
+        "filed": filed,
+        "form": form,
+        "fp": fp,
+    }
 
 
 def test_annual_observations_selects_latest_filed_annual_value():
@@ -15,7 +24,13 @@ def test_annual_observations_selects_latest_filed_annual_value():
                             observation(100, "2024-11-01"),
                             observation(110, "2025-02-01"),
                             observation(20, "2025-02-01", "2024-07-01", "2024-09-30"),
-                            observation(30, "2025-02-01", "2023-10-01", "2024-09-30", form="10-Q"),
+                            observation(
+                                30,
+                                "2025-02-01",
+                                "2023-10-01",
+                                "2024-09-30",
+                                form="10-Q",
+                            ),
                         ]
                     }
                 }
@@ -23,9 +38,22 @@ def test_annual_observations_selects_latest_filed_annual_value():
         }
     }
 
-    result = annual_observations(facts, ["RevenueFromContractWithCustomerExcludingAssessedTax"])
+    result = annual_observations(
+        facts, ["RevenueFromContractWithCustomerExcludingAssessedTax"]
+    )
 
-    assert result == [{"year": 2024, "value": 110, "start": "2023-10-01", "end": "2024-09-30", "filed": "2025-02-01", "unit": "USD"}]
+    assert result == [
+        {
+            "year": 2024,
+            "value": 110,
+            "start": "2023-10-01",
+            "end": "2024-09-30",
+            "filed": "2025-02-01",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": None,
+        }
+    ]
 
 
 def test_annual_observations_uses_fallback_concept_and_unit():
@@ -58,7 +86,10 @@ def test_summary_calculates_growth_and_net_margin_from_annual_facts():
                 },
                 "NetIncomeLoss": {
                     "units": {
-                        "USD": [observation(20, "2024-11-01", "2022-10-01", "2023-09-30"), observation(25, "2025-11-01")]
+                        "USD": [
+                            observation(20, "2024-11-01", "2022-10-01", "2023-09-30"),
+                            observation(25, "2025-11-01"),
+                        ]
                     }
                 },
             }

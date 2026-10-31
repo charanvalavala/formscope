@@ -5,5 +5,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src ./src
 COPY static ./static
 ENV PYTHONPATH=/app/src
+ENV FORMSCOPE_MODEL_DIR=/app/models
+RUN python -c "from formscope.semantic import download_model; download_model()"
 EXPOSE 8000
 CMD ["sh", "-c", "exec uvicorn formscope.api:app --host 0.0.0.0 --port ${PORT:-8000}"]

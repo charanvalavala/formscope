@@ -21,7 +21,9 @@ def test_inline_xbrl_parser_filters_to_annual_consolidated_context_and_applies_s
     <ix:nonfraction name="us-gaap:Revenues" contextref="segment" unitref="usd" scale="6">80</ix:nonfraction>
     """
 
-    tag, value = extract_annual_value(BeautifulSoup(html, "html.parser"), ["Revenues"], "2024-12-31")
+    tag, value = extract_annual_value(
+        BeautifulSoup(html, "html.parser"), ["Revenues"], "2024-12-31"
+    )
 
     assert tag == "Revenues"
     assert value == Decimal("125000000")
@@ -33,7 +35,9 @@ def test_inline_xbrl_parser_applies_negative_sign():
     <ix:nonfraction name="us-gaap:NetIncomeLoss" contextref="annual" unitref="usd" scale="3" sign="-">12</ix:nonfraction>
     """
 
-    tag, value = extract_annual_value(BeautifulSoup(html, "html.parser"), ["NetIncomeLoss"], "2024-12-31")
+    tag, value = extract_annual_value(
+        BeautifulSoup(html, "html.parser"), ["NetIncomeLoss"], "2024-12-31"
+    )
 
     assert tag == "NetIncomeLoss"
     assert value == Decimal("-12000")
@@ -41,8 +45,14 @@ def test_inline_xbrl_parser_applies_negative_sign():
 
 def test_formscope_matches_checked_in_values_from_twenty_filed_10ks():
     root = Path(__file__).resolve().parents[1]
-    fixture = json.loads((root / "data" / "financial-ground-truth-20.json").read_text(encoding="utf-8"))
-    report = json.loads((root / "reports" / "financial-ground-truth-results.json").read_text(encoding="utf-8"))
+    fixture = json.loads(
+        (root / "data" / "financial-ground-truth-20.json").read_text(encoding="utf-8")
+    )
+    report = json.loads(
+        (root / "reports" / "financial-ground-truth-results.json").read_text(
+            encoding="utf-8"
+        )
+    )
     report_rows = {item["ticker"]: item for item in report["details"]}
 
     assert len(fixture) == 20
@@ -51,24 +61,52 @@ def test_formscope_matches_checked_in_values_from_twenty_filed_10ks():
     assert report["total_matches"] == report["total_fact_checks"] == 40
     for item in fixture:
         report_row = report_rows[item["ticker"]]
-        assert report_row["revenue_expected"] == report_row["revenue_actual"] == item["revenue"]
-        assert report_row["net_income_expected"] == report_row["net_income_actual"] == item["net_income"]
+        assert (
+            report_row["revenue_expected"]
+            == report_row["revenue_actual"]
+            == item["revenue"]
+        )
+        assert (
+            report_row["net_income_expected"]
+            == report_row["net_income_actual"]
+            == item["net_income"]
+        )
         assert report_row["revenue_match"] is True
         assert report_row["net_income_match"] is True
         end = date.fromisoformat(item["report_date"])
         start = (end - timedelta(days=365)).isoformat()
-        observation = {"start": start, "end": item["report_date"], "filed": item["report_date"], "form": "10-K", "fp": "FY"}
+        observation = {
+            "start": start,
+            "end": item["report_date"],
+            "filed": item["report_date"],
+            "form": "10-K",
+            "fp": "FY",
+        }
         facts = {
             "cik": int(item["cik"]),
             "facts": {
                 "us-gaap": {
-                    item["revenue_tag"]: {"units": {"USD": [{**observation, "val": int(Decimal(item["revenue"]))}]}},
-                    item["net_income_tag"]: {"units": {"USD": [{**observation, "val": int(Decimal(item["net_income"]))}]}},
+                    item["revenue_tag"]: {
+                        "units": {
+                            "USD": [
+                                {**observation, "val": int(Decimal(item["revenue"]))}
+                            ]
+                        }
+                    },
+                    item["net_income_tag"]: {
+                        "units": {
+                            "USD": [
+                                {**observation, "val": int(Decimal(item["net_income"]))}
+                            ]
+                        }
+                    },
                 }
             },
         }
         result = summarize_facts(facts, item["company"], item["ticker"])
-        period = next(row for row in result["periods"] if row["as_of"] == item["report_date"])
+        period = next(
+            row for row in result["periods"] if row["as_of"] == item["report_date"]
+        )
 
         assert period["revenue"] == int(Decimal(item["revenue"]))
         assert period["net_income"] == int(Decimal(item["net_income"]))

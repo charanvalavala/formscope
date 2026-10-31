@@ -1,0 +1,212 @@
+[
+  {
+    "id": "AAPL-q0",
+    "question": "What share of net sales came from direct versus reseller channels?",
+    "expected": [
+      "AAPL-0"
+    ]
+  },
+  {
+    "id": "AAPL-q1",
+    "question": "Which competitive advantages include security and a third-party accessories ecosystem?",
+    "expected": [
+      "AAPL-1"
+    ]
+  },
+  {
+    "id": "AAPL-q2",
+    "question": "Does the company distribute products through mobile carriers as well as its own stores?",
+    "expected": [
+      "AAPL-0"
+    ]
+  },
+  {
+    "id": "MSFT-q0",
+    "question": "What drives Dynamics revenue besides the number of licensed users?",
+    "expected": [
+      "MSFT-0"
+    ]
+  },
+  {
+    "id": "MSFT-q1",
+    "question": "What types of services compete with LinkedIn?",
+    "expected": [
+      "MSFT-1"
+    ]
+  },
+  {
+    "id": "MSFT-q2",
+    "question": "Which low-code platforms are part of the Dynamics cloud business?",
+    "expected": [
+      "MSFT-0"
+    ]
+  },
+  {
+    "id": "GOOGL-q0",
+    "question": "Why might people bypass Google when looking for travel or employment information?",
+    "expected": [
+      "GOOGL-0"
+    ]
+  },
+  {
+    "id": "GOOGL-q1",
+    "question": "Why does keeping users matter when switching products takes one click?",
+    "expected": [
+      "GOOGL-1"
+    ]
+  },
+  {
+    "id": "GOOGL-q2",
+    "question": "Do topic-specific search and shopping providers compete with general search?",
+    "expected": [
+      "GOOGL-0"
+    ]
+  },
+  {
+    "id": "AMZN-q0",
+    "question": "Which computing services are offered to universities and government agencies through AWS?",
+    "expected": [
+      "AMZN-0"
+    ]
+  },
+  {
+    "id": "AMZN-q1",
+    "question": "What types of retailers compete in the worldwide marketplace?",
+    "expected": [
+      "AMZN-1"
+    ]
+  },
+  {
+    "id": "AMZN-q2",
+    "question": "How does the company earn money from third-party seller programs?",
+    "expected": [
+      "AMZN-0"
+    ]
+  },
+  {
+    "id": "NVDA-q0",
+    "question": "What financial risk accompanies standalone AI Enterprise and Omniverse software?",
+    "expected": [
+      "NVDA-0"
+    ]
+  },
+  {
+    "id": "NVDA-q1",
+    "question": "How can rival functionality affect selling prices and demand?",
+    "expected": [
+      "NVDA-1"
+    ]
+  },
+  {
+    "id": "NVDA-q2",
+    "question": "Could software and services incur costs without producing significant revenue?",
+    "expected": [
+      "NVDA-0"
+    ]
+  },
+  {
+    "id": "META-q0",
+    "question": "What kinds of social communication and advertising products compete with this business?",
+    "expected": [
+      "META-0"
+    ]
+  },
+  {
+    "id": "META-q1",
+    "question": "Does this company also compete in frontier models and augmented reality?",
+    "expected": [
+      "META-1"
+    ]
+  },
+  {
+    "id": "META-q2",
+    "question": "Who competes to sell advertising and optimize advertising campaigns?",
+    "expected": [
+      "META-0"
+    ]
+  },
+  {
+    "id": "ORCL-q0",
+    "question": "Why do rapid technical advances require differentiated cloud offerings?",
+    "expected": [
+      "ORCL-0"
+    ]
+  },
+  {
+    "id": "ORCL-q1",
+    "question": "How can product defects interrupt both internal and customer operations?",
+    "expected": [
+      "ORCL-1"
+    ]
+  },
+  {
+    "id": "ORCL-q2",
+    "question": "How could delayed cloud or software releases affect sales?",
+    "expected": [
+      "ORCL-1"
+    ]
+  },
+  {
+    "id": "TSLA-q0",
+    "question": "When was the autonomous ride-hailing service launched?",
+    "expected": [
+      "TSLA-0"
+    ]
+  },
+  {
+    "id": "TSLA-q1",
+    "question": "What business consequences could increased vehicle competition cause?",
+    "expected": [
+      "TSLA-1"
+    ]
+  },
+  {
+    "id": "TSLA-q2",
+    "question": "What purpose-built vehicle is intended for Robotaxi production?",
+    "expected": [
+      "TSLA-0"
+    ]
+  },
+  {
+    "id": "CSCO-q0",
+    "question": "What goals motivate strategic alliances, including exchange and joint marketing?",
+    "expected": [
+      "CSCO-0"
+    ]
+  },
+  {
+    "id": "CSCO-q1",
+    "question": "Which geography is identified with price-focused competition?",
+    "expected": [
+      "CSCO-1"
+    ]
+  },
+  {
+    "id": "CSCO-q2",
+    "question": "Can joint product development and new market creation be alliance objectives?",
+    "expected": [
+      "CSCO-0"
+    ]
+  },
+  {
+    "id": "INTC-q0",
+    "question": "What financial effects could follow failure of the external foundry strategy?",
+    "expected": [
+      "INTC-0"
+    ]
+  },
+  {
+    "id": "INTC-q1",
+    "question": "Which forward-looking statements discuss manufacturing and product roadmaps?",
+    "expected": [
+      "INTC-1"
+    ]
+  },
+  {
+    "id": "INTC-q2",
+    "question": "Could inability to compete accelerate asset write-downs?",
+    "expected": [
+      "INTC-0"
+    ]
+  }
+]

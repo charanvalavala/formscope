@@ -14,19 +14,33 @@ HEADERS = {"User-Agent": SEC_USER_AGENT, "Accept-Encoding": "gzip, deflate"}
 
 @lru_cache(maxsize=4)
 def _company_tickers(_: int) -> dict[str, dict[str, Any]]:
-    response = httpx.get("https://www.sec.gov/files/company_tickers.json", headers=HEADERS, timeout=SEC_TIMEOUT)
+    response = httpx.get(
+        "https://www.sec.gov/files/company_tickers.json",
+        headers=HEADERS,
+        timeout=SEC_TIMEOUT,
+    )
     response.raise_for_status()
     records = response.json().values()
-    return {str(item["ticker"]).upper(): {"cik": f"{int(item['cik_str']):010d}", "name": item["title"]} for item in records}
+    return {
+        str(item["ticker"]).upper(): {
+            "cik": f"{int(item['cik_str']):010d}",
+            "name": item["title"],
+        }
+        for item in records
+    }
 
 
 def company_tickers() -> dict[str, dict[str, Any]]:
     return _company_tickers(int(time() // 86400))
 
 
-@lru_cache(maxsize=256)
+@lru_cache(maxsize=4)
 def _company_facts(cik: str, _: int) -> dict[str, Any]:
-    response = httpx.get(f"{SEC_BASE}/api/xbrl/companyfacts/CIK{cik}.json", headers=HEADERS, timeout=SEC_TIMEOUT)
+    response = httpx.get(
+        f"{SEC_BASE}/api/xbrl/companyfacts/CIK{cik}.json",
+        headers=HEADERS,
+        timeout=SEC_TIMEOUT,
+    )
     response.raise_for_status()
     return response.json()
 
@@ -35,10 +49,12 @@ def company_facts(cik: str) -> dict[str, Any]:
     return _company_facts(cik, int(time() // 3600))
 
 
-@lru_cache(maxsize=256)
+@lru_cache(maxsize=4)
 def _company_submissions(cik: str, _: int) -> dict[str, Any]:
     headers = {**HEADERS, "Host": "data.sec.gov"}
-    response = httpx.get(f"{SEC_BASE}/submissions/CIK{cik}.json", headers=headers, timeout=SEC_TIMEOUT)
+    response = httpx.get(
+        f"{SEC_BASE}/submissions/CIK{cik}.json", headers=headers, timeout=SEC_TIMEOUT
+    )
     response.raise_for_status()
     return response.json()
 
@@ -52,7 +68,9 @@ def filing_url(cik: str, accession: str, primary_document: str) -> str:
 
 
 @lru_cache(maxsize=8)
-def _filing_text(cik: str, accession: str, primary_document: str, _: int) -> tuple[str, str]:
+def _filing_text(
+    cik: str, accession: str, primary_document: str, _: int
+) -> tuple[str, str]:
     url = filing_url(cik, accession, primary_document)
     headers = {"User-Agent": SEC_USER_AGENT, "Accept-Encoding": "gzip, deflate"}
     body = bytearray()

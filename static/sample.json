@@ -1,0 +1,273 @@
+{
+  "captured_at": "2026-10-31",
+  "company": {
+    "ticker": "AAPL",
+    "company": "Apple Inc.",
+    "cik": 320193,
+    "periods": [
+      {
+        "year": 2020,
+        "revenue": 274515000000,
+        "unit": "USD",
+        "as_of": "2020-09-26",
+        "net_income": 57411000000,
+        "net_margin": 0.20913611278072236,
+        "operating_income": 66288000000
+      },
+      {
+        "year": 2021,
+        "revenue": 365817000000,
+        "unit": "USD",
+        "as_of": "2021-09-25",
+        "net_income": 94680000000,
+        "net_margin": 0.2588179335569424,
+        "operating_income": 108949000000,
+        "revenue_growth": 0.33259384733074704
+      },
+      {
+        "year": 2022,
+        "revenue": 394328000000,
+        "unit": "USD",
+        "as_of": "2022-09-24",
+        "net_income": 99803000000,
+        "net_margin": 0.2530964070519973,
+        "operating_income": 119437000000,
+        "revenue_growth": 0.0779378760418461
+      },
+      {
+        "year": 2023,
+        "revenue": 383285000000,
+        "unit": "USD",
+        "as_of": "2023-09-30",
+        "net_income": 96995000000,
+        "net_margin": 0.2530623426432028,
+        "operating_income": 114301000000,
+        "revenue_growth": -0.02800460530319937
+      },
+      {
+        "year": 2024,
+        "revenue": 391035000000,
+        "unit": "USD",
+        "as_of": "2024-09-28",
+        "net_income": 93736000000,
+        "net_margin": 0.23971255769943867,
+        "operating_income": 123216000000,
+        "revenue_growth": 0.02021994077514111
+      },
+      {
+        "year": 2025,
+        "revenue": 416161000000,
+        "unit": "USD",
+        "as_of": "2025-09-27",
+        "net_income": 112010000000,
+        "net_margin": 0.2691506412181824,
+        "operating_income": 133050000000,
+        "revenue_growth": 0.06425511782832749
+      }
+    ],
+    "additional_metrics": {
+      "operating_cash_flow": [
+        {
+          "year": 2020,
+          "value": 80674000000,
+          "start": "2019-09-29",
+          "end": "2020-09-26",
+          "filed": "2022-10-28",
+          "unit": "USD"
+        },
+        {
+          "year": 2021,
+          "value": 104038000000,
+          "start": "2020-09-27",
+          "end": "2021-09-25",
+          "filed": "2023-11-03",
+          "unit": "USD"
+        },
+        {
+          "year": 2022,
+          "value": 122151000000,
+          "start": "2021-09-26",
+          "end": "2022-09-24",
+          "filed": "2024-11-01",
+          "unit": "USD"
+        },
+        {
+          "year": 2023,
+          "value": 110543000000,
+          "start": "2022-09-25",
+          "end": "2023-09-30",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        },
+        {
+          "year": 2024,
+          "value": 118254000000,
+          "start": "2023-10-01",
+          "end": "2024-09-28",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        },
+        {
+          "year": 2025,
+          "value": 111482000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        }
+      ],
+      "capital_expenditures": [
+        {
+          "year": 2020,
+          "value": 7309000000,
+          "start": "2019-09-29",
+          "end": "2020-09-26",
+          "filed": "2022-10-28",
+          "unit": "USD"
+        },
+        {
+          "year": 2021,
+          "value": 11085000000,
+          "start": "2020-09-27",
+          "end": "2021-09-25",
+          "filed": "2023-11-03",
+          "unit": "USD"
+        },
+        {
+          "year": 2022,
+          "value": 10708000000,
+          "start": "2021-09-26",
+          "end": "2022-09-24",
+          "filed": "2024-11-01",
+          "unit": "USD"
+        },
+        {
+          "year": 2023,
+          "value": 10959000000,
+          "start": "2022-09-25",
+          "end": "2023-09-30",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        },
+        {
+          "year": 2024,
+          "value": 9447000000,
+          "start": "2023-10-01",
+          "end": "2024-09-28",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        },
+        {
+          "year": 2025,
+          "value": 12715000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "unit": "USD"
+        }
+      ],
+      "diluted_eps": [
+        {
+          "year": 2020,
+          "value": 3.28,
+          "start": "2019-09-29",
+          "end": "2020-09-26",
+          "filed": "2022-10-28",
+          "unit": "USD/shares"
+        },
+        {
+          "year": 2021,
+          "value": 5.61,
+          "start": "2020-09-27",
+          "end": "2021-09-25",
+          "filed": "2023-11-03",
+          "unit": "USD/shares"
+        },
+        {
+          "year": 2022,
+          "value": 6.11,
+          "start": "2021-09-26",
+          "end": "2022-09-24",
+          "filed": "2024-11-01",
+          "unit": "USD/shares"
+        },
+        {
+          "year": 2023,
+          "value": 6.13,
+          "start": "2022-09-25",
+          "end": "2023-09-30",
+          "filed": "2025-10-31",
+          "unit": "USD/shares"
+        },
+        {
+          "year": 2024,
+          "value": 6.08,
+          "start": "2023-10-01",
+          "end": "2024-09-28",
+          "filed": "2025-10-31",
+          "unit": "USD/shares"
+        },
+        {
+          "year": 2025,
+          "value": 7.46,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "unit": "USD/shares"
+        }
+      ]
+    },
+    "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "generated_at": "2026-10-31T16:49:44+00:00",
+    "notes": [
+      "Annual 10-K XBRL facts only.",
+      "Metric availability varies by issuer and fiscal year.",
+      "This tool summarizes filed facts; it does not recommend securities or forecast returns."
+    ],
+    "filings": [
+      {
+        "filed": "2025-10-31",
+        "period": "2025-09-27",
+        "accession": "0000320193-25-000079",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+      },
+      {
+        "filed": "2024-11-01",
+        "period": "2024-09-28",
+        "accession": "0000320193-24-000123",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+      },
+      {
+        "filed": "2023-11-03",
+        "period": "2023-09-30",
+        "accession": "0000320193-23-000106",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm"
+      },
+      {
+        "filed": "2022-10-28",
+        "period": "2022-09-24",
+        "accession": "0000320193-22-000108",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000108/aapl-20220924.htm"
+      },
+      {
+        "filed": "2021-10-29",
+        "period": "2021-09-25",
+        "accession": "0000320193-21-000105",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000105/aapl-20210925.htm"
+      }
+    ]
+  },
+  "search": {
+    "mode": "hybrid-minilm-onnx",
+    "answer": "Saved query: What share of sales came through indirect distribution?",
+    "citations": [
+      {
+        "rank": 1,
+        "score": 0.03278688524590164,
+        "text": "ets directly to customers through its retail and online stores and its direct sales force. The Company sells its services in the same markets through its various service platforms. The Company also employs a variety of indirect distribution channels, such as third-party cellular network carriers and other resellers, for the sale of its products and certain of its services. During 2025, the Company\u2019s net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales. Competition The markets for the Company\u2019s products and",
+        "passage_index": 0,
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+      }
+    ]
+  }
+}
