@@ -1,0 +1,692 @@
+{
+  "captured_at": "2026-10-31T17:27:15.986249+00:00",
+  "base_url": "https://charan-formscope.onrender.com",
+  "companies_attempted": 20,
+  "expected_companies": 20,
+  "checks_attempted": 40,
+  "matches": 40,
+  "errors": 0,
+  "scope": "Updated deployed API compared against the previously pinned 20-filing revenue/net-income ground truth. Source filings were not fetched again. Errors count as non-matches; new restatements may legitimately differ from the pinned figures.",
+  "details": [
+    {
+      "ticker": "AAPL",
+      "report_date": "2025-09-27",
+      "accession": "0000320193-25-000079",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "revenue_expected": "416161000000",
+      "revenue_actual": 416161000000,
+      "revenue_match": true,
+      "net_income_expected": "112010000000",
+      "net_income_actual": 112010000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 416161000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000320193-25-000079"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 112010000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-10-31",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000320193-25-000079"
+        }
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "report_date": "2026-06-30",
+      "accession": "0001193125-26-323660",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "revenue_expected": "331839000000",
+      "revenue_actual": 331839000000,
+      "revenue_match": true,
+      "net_income_expected": "133749000000",
+      "net_income_actual": 133749000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 331839000000,
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "filed": "2026-07-29",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001193125-26-323660"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 133749000000,
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "filed": "2026-07-29",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001193125-26-323660"
+        }
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "report_date": "2025-12-31",
+      "accession": "0001652044-26-000018",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+      "revenue_expected": "402836000000",
+      "revenue_actual": 402836000000,
+      "revenue_match": true,
+      "net_income_expected": "132170000000",
+      "net_income_actual": 132170000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 402836000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-05",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0001652044-26-000018"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 132170000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-05",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001652044-26-000018"
+        }
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "report_date": "2025-12-31",
+      "accession": "0001018724-26-000004",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+      "revenue_expected": "716924000000",
+      "revenue_actual": 716924000000,
+      "revenue_match": true,
+      "net_income_expected": "77670000000",
+      "net_income_actual": 77670000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 716924000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-06",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001018724-26-000004"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 77670000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-06",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001018724-26-000004"
+        }
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "report_date": "2026-01-25",
+      "accession": "0001045810-26-000021",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "revenue_expected": "215938000000",
+      "revenue_actual": 215938000000,
+      "revenue_match": true,
+      "net_income_expected": "120067000000",
+      "net_income_actual": 120067000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 215938000000,
+          "start": "2025-01-27",
+          "end": "2026-01-25",
+          "filed": "2026-02-25",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0001045810-26-000021"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 120067000000,
+          "start": "2025-01-27",
+          "end": "2026-01-25",
+          "filed": "2026-02-25",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001045810-26-000021"
+        }
+      }
+    },
+    {
+      "ticker": "META",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-003942",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "revenue_expected": "200966000000",
+      "revenue_actual": 200966000000,
+      "revenue_match": true,
+      "net_income_expected": "60458000000",
+      "net_income_actual": 60458000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 200966000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001628280-26-003942"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 60458000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001628280-26-003942"
+        }
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "report_date": "2026-05-31",
+      "accession": "0001193125-26-277521",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "revenue_expected": "67357000000",
+      "revenue_actual": 67357000000,
+      "revenue_match": true,
+      "net_income_expected": "17087000000",
+      "net_income_actual": 17087000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 67357000000,
+          "start": "2025-06-01",
+          "end": "2026-05-31",
+          "filed": "2026-06-22",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001193125-26-277521"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 17087000000,
+          "start": "2025-06-01",
+          "end": "2026-05-31",
+          "filed": "2026-06-22",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001193125-26-277521"
+        }
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-003952",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+      "revenue_expected": "94827000000",
+      "revenue_actual": 94827000000,
+      "revenue_match": true,
+      "net_income_expected": "3794000000",
+      "net_income_actual": 3794000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 94827000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001628280-26-003952"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 3794000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-29",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001628280-26-003952"
+        }
+      }
+    },
+    {
+      "ticker": "CSCO",
+      "report_date": "2026-07-25",
+      "accession": "0000858877-26-000132",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+      "revenue_expected": "63325000000",
+      "revenue_actual": 63325000000,
+      "revenue_match": true,
+      "net_income_expected": "13267000000",
+      "net_income_actual": 13267000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 63325000000,
+          "start": "2025-07-27",
+          "end": "2026-07-25",
+          "filed": "2026-09-02",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000858877-26-000132"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 13267000000,
+          "start": "2025-07-27",
+          "end": "2026-07-25",
+          "filed": "2026-09-02",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000858877-26-000132"
+        }
+      }
+    },
+    {
+      "ticker": "INTC",
+      "report_date": "2025-12-27",
+      "accession": "0000050863-26-000011",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm",
+      "revenue_expected": "52853000000",
+      "revenue_actual": 52853000000,
+      "revenue_match": true,
+      "net_income_expected": "-267000000",
+      "net_income_actual": -267000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 52853000000,
+          "start": "2024-12-29",
+          "end": "2025-12-27",
+          "filed": "2026-01-23",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000050863-26-000011"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": -267000000,
+          "start": "2024-12-29",
+          "end": "2025-12-27",
+          "filed": "2026-01-23",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000050863-26-000011"
+        }
+      }
+    },
+    {
+      "ticker": "AMD",
+      "report_date": "2025-12-27",
+      "accession": "0000002488-26-000018",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+      "revenue_expected": "34639000000",
+      "revenue_actual": 34639000000,
+      "revenue_match": true,
+      "net_income_expected": "4335000000",
+      "net_income_actual": 4335000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 34639000000,
+          "start": "2024-12-29",
+          "end": "2025-12-27",
+          "filed": "2026-02-04",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000002488-26-000018"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 4335000000,
+          "start": "2024-12-29",
+          "end": "2025-12-27",
+          "filed": "2026-02-04",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000002488-26-000018"
+        }
+      }
+    },
+    {
+      "ticker": "QCOM",
+      "report_date": "2025-09-28",
+      "accession": "0000804328-25-000085",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+      "revenue_expected": "44284000000",
+      "revenue_actual": 44284000000,
+      "revenue_match": true,
+      "net_income_expected": "5541000000",
+      "net_income_actual": 5541000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 44284000000,
+          "start": "2024-09-30",
+          "end": "2025-09-28",
+          "filed": "2025-11-05",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0000804328-25-000085"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 5541000000,
+          "start": "2024-09-30",
+          "end": "2025-09-28",
+          "filed": "2025-11-05",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000804328-25-000085"
+        }
+      }
+    },
+    {
+      "ticker": "NFLX",
+      "report_date": "2025-12-31",
+      "accession": "0001065280-26-000034",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000034/nflx-20251231.htm",
+      "revenue_expected": "45183036000",
+      "revenue_actual": 45183036000,
+      "revenue_match": true,
+      "net_income_expected": "10981201000",
+      "net_income_actual": 10981201000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 45183036000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-23",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0001065280-26-000034"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 10981201000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-01-23",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001065280-26-000034"
+        }
+      }
+    },
+    {
+      "ticker": "DIS",
+      "report_date": "2025-09-27",
+      "accession": "0001744489-25-000155",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
+      "revenue_expected": "94425000000",
+      "revenue_actual": 94425000000,
+      "revenue_match": true,
+      "net_income_expected": "12404000000",
+      "net_income_actual": 12404000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 94425000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-11-13",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0001744489-25-000155"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 12404000000,
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "filed": "2025-11-13",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001744489-25-000155"
+        }
+      }
+    },
+    {
+      "ticker": "KO",
+      "report_date": "2025-12-31",
+      "accession": "0001628280-26-010047",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+      "revenue_expected": "47941000000",
+      "revenue_actual": 47941000000,
+      "revenue_match": true,
+      "net_income_expected": "13107000000",
+      "net_income_actual": 13107000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 47941000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-20",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0001628280-26-010047"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 13107000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-20",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001628280-26-010047"
+        }
+      }
+    },
+    {
+      "ticker": "PG",
+      "report_date": "2026-06-30",
+      "accession": "0000080424-26-000103",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm",
+      "revenue_expected": "87032000000",
+      "revenue_actual": 87032000000,
+      "revenue_match": true,
+      "net_income_expected": "16046000000",
+      "net_income_actual": 16046000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 87032000000,
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "filed": "2026-08-04",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0000080424-26-000103"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 16046000000,
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "filed": "2026-08-04",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000080424-26-000103"
+        }
+      }
+    },
+    {
+      "ticker": "WMT",
+      "report_date": "2026-01-31",
+      "accession": "0000104169-26-000055",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
+      "revenue_expected": "706413000000",
+      "revenue_actual": 706413000000,
+      "revenue_match": true,
+      "net_income_expected": "21893000000",
+      "net_income_actual": 21893000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 706413000000,
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "filed": "2026-03-13",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000104169-26-000055"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 21893000000,
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "filed": "2026-03-13",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000104169-26-000055"
+        }
+      }
+    },
+    {
+      "ticker": "COST",
+      "report_date": "2026-08-30",
+      "accession": "0000909832-26-000093",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+      "revenue_expected": "303154000000",
+      "revenue_actual": 303154000000,
+      "revenue_match": true,
+      "net_income_expected": "9226000000",
+      "net_income_actual": 9226000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 303154000000,
+          "start": "2025-09-01",
+          "end": "2026-08-30",
+          "filed": "2026-10-07",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0000909832-26-000093"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 9226000000,
+          "start": "2025-09-01",
+          "end": "2026-08-30",
+          "filed": "2026-10-07",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000909832-26-000093"
+        }
+      }
+    },
+    {
+      "ticker": "PFE",
+      "report_date": "2025-12-31",
+      "accession": "0000078003-26-000026",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+      "revenue_expected": "62579000000",
+      "revenue_actual": 62579000000,
+      "revenue_match": true,
+      "net_income_expected": "7771000000",
+      "net_income_actual": 7771000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2025,
+          "value": 62579000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-26",
+          "unit": "USD",
+          "concept": "Revenues",
+          "accession": "0000078003-26-000026"
+        },
+        "net_income": {
+          "year": 2025,
+          "value": 7771000000,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "filed": "2026-02-26",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0000078003-26-000026"
+        }
+      }
+    },
+    {
+      "ticker": "CRM",
+      "report_date": "2026-01-31",
+      "accession": "0001108524-26-000060",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+      "revenue_expected": "41525000000",
+      "revenue_actual": 41525000000,
+      "revenue_match": true,
+      "net_income_expected": "7457000000",
+      "net_income_actual": 7457000000,
+      "net_income_match": true,
+      "provenance": {
+        "revenue": {
+          "year": 2026,
+          "value": 41525000000,
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "filed": "2026-03-02",
+          "unit": "USD",
+          "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "accession": "0001108524-26-000060"
+        },
+        "net_income": {
+          "year": 2026,
+          "value": 7457000000,
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "filed": "2026-03-02",
+          "unit": "USD",
+          "concept": "NetIncomeLoss",
+          "accession": "0001108524-26-000060"
+        }
+      }
+    }
+  ]
+}

@@ -28,7 +28,13 @@ Hybrid p50 was 7.9 ms and p95 10.2 ms on this CPU run after the model was availa
 PYTHONPATH=src python scripts/evaluate_search.py
 ```
 
-The earlier pinned financial snapshot matched revenue and net income for twenty issuer filings (40/40 checks). `data/financial-ground-truth-20.json` contains accessions and expected facts; `reports/financial-ground-truth-results.json` preserves that run. Offline tests verify the recorded comparisons and extraction edge cases. This upgrade did not refresh that SEC-wide comparison: direct SEC requests from the development host returned 403. Do not interpret the old snapshot as a fresh validation of all issuers under the updated period logic.
+The updated deployed API matched all 40 revenue/net-income values in the previously pinned ground truth for twenty issuer filings, with zero request errors. `reports/deployed-facts-check.json` records each value, reporting date and returned fact provenance. `data/financial-ground-truth-20.json` contains the original accessions and values extracted from inline XBRL. The source filings were not fetched again for this comparison, so it checks the updated API against a fixed reference rather than performing a new independent audit. Later restatements can legitimately differ.
+
+```bash
+python scripts/validate_deployed.py
+```
+
+`reports/financial-ground-truth-results.json` retains the earlier source-filing comparison. Offline tests cover recorded comparisons and extraction edge cases. To refresh the source filings too, use the command below with a valid SEC contact; direct SEC requests from this development host returned 403, while the deployed service could fetch company facts.
 
 ```bash
 export SEC_USER_AGENT="FormScope/1.0 Your Name your-real-contact@example.org"

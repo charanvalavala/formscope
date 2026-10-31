@@ -10,6 +10,29 @@
         "revenue": 274515000000,
         "unit": "USD",
         "as_of": "2020-09-26",
+        "period_start": "2019-09-29",
+        "provenance": {
+          "revenue": {
+            "year": 2020,
+            "value": 274515000000,
+            "start": "2019-09-29",
+            "end": "2020-09-26",
+            "filed": "2022-10-28",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-22-000108"
+          },
+          "net_income": {
+            "year": 2020,
+            "value": 57411000000,
+            "start": "2019-09-29",
+            "end": "2020-09-26",
+            "filed": "2022-10-28",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-22-000108"
+          }
+        },
         "net_income": 57411000000,
         "net_margin": 0.20913611278072236,
         "operating_income": 66288000000
@@ -19,6 +42,29 @@
         "revenue": 365817000000,
         "unit": "USD",
         "as_of": "2021-09-25",
+        "period_start": "2020-09-27",
+        "provenance": {
+          "revenue": {
+            "year": 2021,
+            "value": 365817000000,
+            "start": "2020-09-27",
+            "end": "2021-09-25",
+            "filed": "2023-11-03",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-23-000106"
+          },
+          "net_income": {
+            "year": 2021,
+            "value": 94680000000,
+            "start": "2020-09-27",
+            "end": "2021-09-25",
+            "filed": "2023-11-03",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-23-000106"
+          }
+        },
         "net_income": 94680000000,
         "net_margin": 0.2588179335569424,
         "operating_income": 108949000000,
@@ -29,6 +75,29 @@
         "revenue": 394328000000,
         "unit": "USD",
         "as_of": "2022-09-24",
+        "period_start": "2021-09-26",
+        "provenance": {
+          "revenue": {
+            "year": 2022,
+            "value": 394328000000,
+            "start": "2021-09-26",
+            "end": "2022-09-24",
+            "filed": "2024-11-01",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-24-000123"
+          },
+          "net_income": {
+            "year": 2022,
+            "value": 99803000000,
+            "start": "2021-09-26",
+            "end": "2022-09-24",
+            "filed": "2024-11-01",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-24-000123"
+          }
+        },
         "net_income": 99803000000,
         "net_margin": 0.2530964070519973,
         "operating_income": 119437000000,
@@ -39,6 +108,29 @@
         "revenue": 383285000000,
         "unit": "USD",
         "as_of": "2023-09-30",
+        "period_start": "2022-09-25",
+        "provenance": {
+          "revenue": {
+            "year": 2023,
+            "value": 383285000000,
+            "start": "2022-09-25",
+            "end": "2023-09-30",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-25-000079"
+          },
+          "net_income": {
+            "year": 2023,
+            "value": 96995000000,
+            "start": "2022-09-25",
+            "end": "2023-09-30",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-25-000079"
+          }
+        },
         "net_income": 96995000000,
         "net_margin": 0.2530623426432028,
         "operating_income": 114301000000,
@@ -49,6 +141,29 @@
         "revenue": 391035000000,
         "unit": "USD",
         "as_of": "2024-09-28",
+        "period_start": "2023-10-01",
+        "provenance": {
+          "revenue": {
+            "year": 2024,
+            "value": 391035000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-25-000079"
+          },
+          "net_income": {
+            "year": 2024,
+            "value": 93736000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-25-000079"
+          }
+        },
         "net_income": 93736000000,
         "net_margin": 0.23971255769943867,
         "operating_income": 123216000000,
@@ -59,6 +174,29 @@
         "revenue": 416161000000,
         "unit": "USD",
         "as_of": "2025-09-27",
+        "period_start": "2024-09-29",
+        "provenance": {
+          "revenue": {
+            "year": 2025,
+            "value": 416161000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "accession": "0000320193-25-000079"
+          },
+          "net_income": {
+            "year": 2025,
+            "value": 112010000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-10-31",
+            "unit": "USD",
+            "concept": "NetIncomeLoss",
+            "accession": "0000320193-25-000079"
+          }
+        },
         "net_income": 112010000000,
         "net_margin": 0.2691506412181824,
         "operating_income": 133050000000,
@@ -73,7 +211,9 @@
           "start": "2019-09-29",
           "end": "2020-09-26",
           "filed": "2022-10-28",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-22-000108"
         },
         {
           "year": 2021,
@@ -81,7 +221,9 @@
           "start": "2020-09-27",
           "end": "2021-09-25",
           "filed": "2023-11-03",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-23-000106"
         },
         {
           "year": 2022,
@@ -89,7 +231,9 @@
           "start": "2021-09-26",
           "end": "2022-09-24",
           "filed": "2024-11-01",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-24-000123"
         },
         {
           "year": 2023,
@@ -97,7 +241,9 @@
           "start": "2022-09-25",
           "end": "2023-09-30",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2024,
@@ -105,7 +251,9 @@
           "start": "2023-10-01",
           "end": "2024-09-28",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2025,
@@ -113,7 +261,9 @@
           "start": "2024-09-29",
           "end": "2025-09-27",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "NetCashProvidedByUsedInOperatingActivities",
+          "accession": "0000320193-25-000079"
         }
       ],
       "capital_expenditures": [
@@ -123,7 +273,9 @@
           "start": "2019-09-29",
           "end": "2020-09-26",
           "filed": "2022-10-28",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-22-000108"
         },
         {
           "year": 2021,
@@ -131,7 +283,9 @@
           "start": "2020-09-27",
           "end": "2021-09-25",
           "filed": "2023-11-03",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-23-000106"
         },
         {
           "year": 2022,
@@ -139,7 +293,9 @@
           "start": "2021-09-26",
           "end": "2022-09-24",
           "filed": "2024-11-01",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-24-000123"
         },
         {
           "year": 2023,
@@ -147,7 +303,9 @@
           "start": "2022-09-25",
           "end": "2023-09-30",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2024,
@@ -155,7 +313,9 @@
           "start": "2023-10-01",
           "end": "2024-09-28",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2025,
@@ -163,7 +323,9 @@
           "start": "2024-09-29",
           "end": "2025-09-27",
           "filed": "2025-10-31",
-          "unit": "USD"
+          "unit": "USD",
+          "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+          "accession": "0000320193-25-000079"
         }
       ],
       "diluted_eps": [
@@ -173,7 +335,9 @@
           "start": "2019-09-29",
           "end": "2020-09-26",
           "filed": "2022-10-28",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-22-000108"
         },
         {
           "year": 2021,
@@ -181,7 +345,9 @@
           "start": "2020-09-27",
           "end": "2021-09-25",
           "filed": "2023-11-03",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-23-000106"
         },
         {
           "year": 2022,
@@ -189,7 +355,9 @@
           "start": "2021-09-26",
           "end": "2022-09-24",
           "filed": "2024-11-01",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-24-000123"
         },
         {
           "year": 2023,
@@ -197,7 +365,9 @@
           "start": "2022-09-25",
           "end": "2023-09-30",
           "filed": "2025-10-31",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2024,
@@ -205,7 +375,9 @@
           "start": "2023-10-01",
           "end": "2024-09-28",
           "filed": "2025-10-31",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-25-000079"
         },
         {
           "year": 2025,
@@ -213,12 +385,14 @@
           "start": "2024-09-29",
           "end": "2025-09-27",
           "filed": "2025-10-31",
-          "unit": "USD/shares"
+          "unit": "USD/shares",
+          "concept": "EarningsPerShareDiluted",
+          "accession": "0000320193-25-000079"
         }
       ]
     },
     "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
-    "generated_at": "2026-10-31T16:49:44+00:00",
+    "generated_at": "2026-10-31T17:24:55+00:00",
     "notes": [
       "Annual 10-K XBRL facts only.",
       "Metric availability varies by issuer and fiscal year.",
@@ -269,5 +443,6 @@
         "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
       }
     ]
-  }
+  },
+  "provenance": "Company values captured from the updated deployed API on 2026-10-31; exact reporting periods and XBRL fact accessions are retained. The semantic result remains the recorded MiniLM passage-search example."
 }

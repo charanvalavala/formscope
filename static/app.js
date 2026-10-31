@@ -120,6 +120,7 @@ for (const button of document.querySelectorAll("[data-ticker]"))
 $("filing-form").addEventListener("submit", (event) => {
   event.preventDefault();
   busy($("find"), async () => {
+    const token = version;
     const question = $("filing-question").value.trim();
     const data = snapshot
       ? (await sample()).search
@@ -127,6 +128,7 @@ $("filing-form").addEventListener("submit", (event) => {
           `/api/filing-search?ticker=${encodeURIComponent(activeTicker)}&question=${encodeURIComponent(question)}`,
           { key: "search", timeout: 120000 },
         );
+    if (token !== version) return;
     $("search-results").innerHTML =
       `<p class="badge">${safe(snapshot ? "Saved query result" : data.mode)}</p>${data.warning ? `<p class="error">${safe(data.warning)}</p>` : ""}<p class="quiet">${safe(data.answer)}</p><div class="evidence-grid">${data.citations.map((item) => `<article class="evidence"><div class="source">Passage ${item.rank}</div><p>${highlight(item.text, question)}</p><a href="${safe(item.url)}" target="_blank" rel="noopener">Open source filing ↗</a><details><summary>Ranking details</summary><p>Score ${Number(item.score).toFixed(4)}</p></details></article>`).join("")}</div>`;
   });
